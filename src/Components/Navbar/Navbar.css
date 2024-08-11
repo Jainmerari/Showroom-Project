@@ -1,0 +1,217 @@
+/* General styles for desktop screens */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    box-shadow: 0 100px 300px -2px yellow;
+    background-color: black;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p {
+    background-image: linear-gradient(#ff0000, #e28e21); /* Adjust colors as needed */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 3px solid white;
+    border-radius: 10px;
+    font-family: cursive;
+    font-size: 38px;
+    font-weight: 600;
+    width: 248px;
+}
+
+.nav-logo:hover {
+    transform: scale(1.15);
+    transition: transform 0.5s ease;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 26);
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-login-cart button {
+    width: 157px;
+    height: 58px;
+    outline: none;
+    border: 5px solid red;
+    border-radius: 75px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    background: black;
+    cursor: pointer;
+    border-style: groove;
+}
+
+.nav-login-cart button:active {
+    background: white;
+    color: black;
+}
+
+.nav-login-cart button:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+.nav-cart-count {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -45px;
+    margin-left: -30px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}
+
+.cart {
+    background-color: white;
+    border: 4px solid white;
+    border-radius: 15px;
+}
+
+.Linked {
+    color: white;
+}
+
+.Linked:active {
+    color: red;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Linked:hover {
+    transform: scale(1.15);
+    transition: transform 0.5s ease;
+}
+
+/* Media query for tablets and small screens */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        gap: 20px;
+        font-size: 18px;
+        order: 1;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .nav-login-cart {
+        margin-top: 10px;
+        gap: 20px;
+        align-items: flex-start;
+        order: 2;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .nav-login-cart button {
+        width: 140px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .nav-cart-count {
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+    }
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px;
+    }
+
+    .nav-logo p {
+        font-size: 30px;
+        width: auto;
+    }
+
+    .nav-menu {
+        flex-direction: row;
+        gap: 10px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: flex-start;
+        order: 1;
+    }
+
+    .nav-login-cart {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        order: 2;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .nav-login-cart button {
+        width: 100px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .nav-cart-count {
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+    }
+
+    .cart {
+        width: 24px;
+        height: 24px;
+    }
+}

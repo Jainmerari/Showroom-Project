@@ -1,0 +1,58 @@
+/* General styles for desktop screens */
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    background: linear-gradient(to right, #ff0000, #ffffff);
+    padding-top: 100px; /* Add padding to create space */
+}
+
+.popular h1 {
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.popular hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+}
+
+.popular-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensure wrapping of items */
+    justify-content: center; /* Center items */
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 480px) {
+    .popular {
+        padding: 20px;
+        padding-top: 60px; /* Adjust padding for mobile screens */
+        height: auto;
+    }
+
+    .popular h1 {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .popular hr {
+        width: 80px; /* Reduce width */
+        height: 2px; /* Reduce height */
+    }
+
+    .popular-item {
+        gap: 10px; /* Reduce gap */
+    }
+
+    .popular-item img {
+        width: 100px; /* Adjust image size for mobile */
+        height: auto;
+    }
+}

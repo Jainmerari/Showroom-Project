@@ -1,0 +1,97 @@
+/* General styles for desktop screens */
+.offers {
+    width: 65%;
+    height: 65vh;
+    display: flex;
+    margin: auto;
+    padding: 0px 140px;
+    margin-bottom: 150px;
+    border: 5px solid white;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #ff0000 0%, #e1ffea11 60%);
+}
+
+.offers-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offers-left h1 {
+    color: black;
+    font-style: italic;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.offers-left p {
+    color: black;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.offers-left button {
+    width: 282px;
+    height: 70px;
+    border-radius: 35px;
+    background: #000000;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.offers-left button:hover {
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+.offers-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 50px;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 480px) {
+    .offers {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+    .offers-left h1 {
+        font-size: 36px; /* Adjust font size */
+        text-align: center;
+    }
+
+    .offers-left p {
+        font-size: 16px; /* Adjust font size */
+        text-align: center;
+    }
+
+    .offers-left button {
+        width: 200px; /* Adjust button width */
+        height: 50px; /* Adjust button height */
+        font-size: 18px; /* Adjust font size */
+        margin: 20px auto; /* Center button */
+    }
+
+    .offers-right {
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .offers-right img {
+        width: 100%; /* Make image responsive */
+        height: auto;
+    }
+}

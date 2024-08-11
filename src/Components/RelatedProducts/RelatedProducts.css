@@ -1,0 +1,46 @@
+.relatedproducts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+    background: linear-gradient(to right, #ff0000, #ffffff);
+}
+.relatedproducts h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.relatedproducts hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.relatedproducts-item {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+    .relatedproducts {
+        height: auto;
+        padding: 20px;
+    }
+    .relatedproducts h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .relatedproducts hr {
+        width: 150px;
+        height: 4px;
+    }
+    .relatedproducts-item {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

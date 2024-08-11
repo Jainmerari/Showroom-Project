@@ -1,0 +1,124 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo p {
+    color: rgb(255, 255, 255);
+    font-size: 46px;
+    font-weight: 700;
+    transition: transform 0.6s ease;
+}
+
+.footer-logo p:hover {
+    color: rgb(0, 0, 0);
+    transform: scale(1.2);
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.footer-links li {
+    cursor: pointer;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background: linear-gradient(180deg, #ffffff 0%, #ff0000 60%);
+    transition: transform 0.6s ease;
+    padding: 10px 15px;
+}
+
+.footer-links li:hover {
+    background: linear-gradient(180deg, #ff0000 0%, #ffffff 60%);
+    color: black;
+    transform: rotate(360deg);
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icons-container {
+    padding: 10px;
+    padding-bottom: 6px;
+    background: white;
+    border: 8px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    border-style: dotted;
+    background: linear-gradient(180deg, #ffffff 0%, #ff0000 60%);
+    transition: transform 0.3s ease;
+}
+
+.footer-icons-container:hover {
+    background: linear-gradient(180deg, #ffffff 0%, #ff5100 60%);
+    transform: translateY(-20px);
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.footer-copyright hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: red;
+}
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 768px) {
+    .footer {
+        gap: 30px;
+    }
+
+    .footer-logo p {
+        font-size: 32px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-links li {
+        font-size: 18px;
+        padding: 8px 10px;
+    }
+
+    .footer-social-icon {
+        gap: 10px;
+    }
+
+    .footer-icons-container {
+        padding: 8px;
+        padding-bottom: 4px;
+        border: 6px solid rgb(255, 255, 255);
+    }
+
+    .footer-copyright {
+        font-size: 16px;
+    }
+}
